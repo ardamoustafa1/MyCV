@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arda Moustafa - Bilgisayar Mühendisi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="description" content="Arda Moustafa - Bilgisayar Mühendisi. Modern web uygulamaları geliştiriyorum. Portfolio ve CV sitesi.">
+    <meta name="keywords" content="Arda Moustafa, Bilgisayar Mühendisi, Web Developer, Portfolio, CV, Python, Flask, JavaScript">
+    <meta name="author" content="Arda Moustafa">
+    <meta property="og:title" content="Arda Moustafa - Bilgisayar Mühendisi">
+    <meta property="og:description" content="Modern web uygulamaları geliştiriyorum. Portfolio ve CV sitesi.">
+    <meta property="og:image" content="profilephoto.jpg">
+    <meta property="og:url" content="https://ardamoustafa.netlify.app">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Arda Moustafa</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link" data-tr="Ana Sayfa" data-en="Home" data-de="Startseite" data-fr="Accueil" data-it="Home">Ana Sayfa</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" data-tr="Hakkımda" data-en="About" data-de="Über Mich" data-fr="À Propos" data-it="Chi Sono">Hakkımda</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link" data-tr="Yetenekler" data-en="Skills" data-de="Fähigkeiten" data-fr="Compétences" data-it="Competenze">Yetenekler</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link" data-tr="Deneyim" data-en="Experience" data-de="Erfahrung" data-fr="Expérience" data-it="Esperienza">Deneyim</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link" data-tr="Projeler" data-en="Projects" data-de="Projekte" data-fr="Projets" data-it="Progetti">Projeler</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link" data-tr="İletişim" data-en="Contact" data-de="Kontakt" data-fr="Contact" data-it="Contatto">İletişim</a>
+                </li>
+                <li class="nav-item">
+                    <div class="language-selector">
+                        <button class="language-btn" id="languageBtn">
+                            <i class="fas fa-globe"></i>
+                            <span id="currentLang">TR</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="language-dropdown" id="languageDropdown">
+                            <a href="#" class="language-option" data-lang="tr">
+                                <img src="https://flagcdn.com/16x12/tr.png" alt="Türkçe">
+                                <span>Türkçe</span>
+                            </a>
+                            <a href="#" class="language-option" data-lang="en">
+                                <img src="https://flagcdn.com/16x12/gb.png" alt="English">
+                                <span>English</span>
+                            </a>
+                            <a href="#" class="language-option" data-lang="de">
+                                <img src="https://flagcdn.com/16x12/de.png" alt="Deutsch">
+                                <span>Deutsch</span>
+                            </a>
+                            <a href="#" class="language-option" data-lang="fr">
+                                <img src="https://flagcdn.com/16x12/fr.png" alt="Français">
+                                <span>Français</span>
+                            </a>
+                            <a href="#" class="language-option" data-lang="it">
+                                <img src="https://flagcdn.com/16x12/it.png" alt="Italiano">
+                                <span>Italiano</span>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line" data-tr="Merhaba, Ben" data-en="Hello, I'm" data-de="Hallo, ich bin" data-fr="Bonjour, je suis" data-it="Ciao, sono">Merhaba, Ben</span>
+                        <span class="title-name">Arda Moustafa</span>
+                        <span class="title-profession" data-tr="Bilgisayar Mühendisi" data-en="Computer Engineer" data-de="Informatikingenieur" data-fr="Ingénieur Informatique" data-it="Ingegnere Informatico">Bilgisayar Mühendisi</span>
+                    </h1>
+                    <p class="hero-description" data-tr="Istinye Universitesi Bilgisayar Mühendisliği 3. sınıf öğrencisiyim. Yaratıcılık ve teknolojiyi birleştirerek, kullanıcı deneyimini ön planda tutan modern web uygulamaları geliştiriyorum. Her proje, bir hikaye anlatır." data-en="I am a 3rd year Computer Engineering student at Istinye University. I develop modern web applications that combine creativity and technology, prioritizing user experience. Every project tells a story." data-de="Ich bin ein 3. Jahr Computer Engineering Student an der Istinye University. Ich entwickle moderne Webanwendungen, die Kreativität und Technologie verbinden und die Benutzererfahrung in den Vordergrund stellen. Jedes Projekt erzählt eine Geschichte." data-fr="Je suis étudiant en 3ème année d'Ingénierie Informatique à l'Université d'Istinye. Je développe des applications web modernes qui combinent créativité et technologie, en privilégiant l'expérience utilisateur. Chaque projet raconte une histoire." data-it="Sono uno studente del 3° anno di Ingegneria Informatica all'Università di Istinye. Sviluppo applicazioni web moderne che combinano creatività e tecnologia, mettendo al primo posto l'esperienza utente. Ogni progetto racconta una storia.">
+                        Istinye Universitesi Bilgisayar Mühendisliği 3. sınıf öğrencisiyim. 
+                        Yaratıcılık ve teknolojiyi birleştirerek, kullanıcı deneyimini ön planda tutan 
+                        modern web uygulamaları geliştiriyorum. Her proje, bir hikaye anlatır.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary" data-tr="Projelerimi Gör" data-en="View My Projects" data-de="Meine Projekte Ansehen" data-fr="Voir Mes Projets" data-it="Vedi I Miei Progetti">Projelerimi Gör</a>
+                        <a href="#contact" class="btn btn-secondary" data-tr="İletişime Geç" data-en="Get In Touch" data-de="Kontakt Aufnehmen" data-fr="Me Contacter" data-it="Mettiti In Contatto">İletişime Geç</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <div class="profile-image">
+                            <img src="profilephoto.jpg" alt="Arda Moustafa - Bilgisayar Mühendisi" class="profile-photo">
+                        </div>
+                        <div class="floating-elements">
+                            <div class="floating-element element-1"></div>
+                            <div class="floating-element element-2"></div>
+                            <div class="floating-element element-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-tr="Hakkımda" data-en="About Me" data-de="Über Mich" data-fr="À Propos" data-it="Chi Sono">Hakkımda</h2>
+                <p class="section-subtitle" data-tr="Fikirleri Satır Satır İnşa Eden Kodlar" data-en="Building Ideas Line by Line with Code" data-de="Ideen Zeile für Zeile mit Code aufbauen" data-fr="Construire des Idées Ligne par Ligne avec du Code" data-it="Costruire Idee Riga per Riga con il Codice">Fikirleri Satır Satır İnşa Eden Kodlar</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-card">
+                        <h3 data-tr="Bilgisayar Mühendisi" data-en="Computer Engineer" data-de="Informatikingenieur" data-fr="Ingénieur Informatique" data-it="Ingegnere Informatico">Bilgisayar Mühendisi</h3>
+                        <p data-tr="Istinye Üniversitesi Bilgisayar Mühendisliği 3. sınıf öğrencisiyim. Gelecekte yazılım ve yapay zeka alanında kendimi geliştirmek istiyorum. Aktif olarak kendi projelerimi geliştirmeye çalışıyorum. Frontend ve backend alanlarında deneyim sahibi olmaya çalışıyorum. Şu an için tam kapsamlı web uygulamaları oluşturuyorum. Ayrıca okulumun Google Developer Group Core takımının bir üyesiyim." data-en="I am a 3rd year Computer Engineering student at Istinye University. I want to develop myself in software and artificial intelligence fields in the future. I actively try to develop my own projects. I try to gain experience in frontend and backend areas. I am currently creating comprehensive web applications. I am also a member of my school's Google Developer Group Core team." data-de="Ich bin ein 3. Jahr Computer Engineering Student an der Istinye University. In Zukunft möchte ich mich in den Bereichen Software und künstliche Intelligenz weiterentwickeln. Ich entwickle aktiv meine eigenen Projekte. Ich versuche Erfahrung in Frontend- und Backend-Bereichen zu sammeln. Derzeit erstelle ich umfassende Webanwendungen. Außerdem bin ich Mitglied des Google Developer Group Core Teams meiner Schule." data-fr="Je suis étudiant en 3ème année d'Ingénierie Informatique à l'Université d'Istinye. À l'avenir, je veux me développer dans les domaines du logiciel et de l'intelligence artificielle. Je développe activement mes propres projets. J'essaie d'acquérir de l'expérience dans les domaines frontend et backend. Je crée actuellement des applications web complètes. Je suis également membre de l'équipe Google Developer Group Core de mon école." data-it="Sono uno studente del 3° anno di Ingegneria Informatica all'Università di Istinye. In futuro voglio svilupparmi nei campi del software e dell'intelligenza artificiale. Sviluppo attivamente i miei progetti. Cerco di acquisire esperienza nelle aree frontend e backend. Attualmente sto creando applicazioni web complete. Sono anche membro del team Google Developer Group Core della mia scuola.">
+                            Istinye Üniversitesi Bilgisayar Mühendisliği 3. sınıf öğrencisiyim. 
+                            Gelecekte yazılım ve yapay zeka alanında kendimi geliştirmek istiyorum. 
+                            Aktif olarak kendi projelerimi geliştirmeye çalışıyorum. Frontend ve backend 
+                            alanlarında deneyim sahibi olmaya çalışıyorum. Şu an için tam kapsamlı web 
+                            uygulamaları oluşturuyorum. Ayrıca okulumun Google Developer Group Core 
+                            takımının bir üyesiyim.
+                        </p>
+                        <div class="about-stats">
+                            <div class="stat">
+                                <span class="stat-number">30+</span>
+                                <span class="stat-label" data-tr="Tamamlanan Proje" data-en="Completed Projects" data-de="Abgeschlossene Projekte" data-fr="Projets Terminés" data-it="Progetti Completati">Tamamlanan Proje</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">10+</span>
+                                <span class="stat-label" data-tr="Sertifika" data-en="Certificates" data-de="Zertifikate" data-fr="Certificats" data-it="Certificati">Sertifika</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-card">
+                        <div class="card-content">
+                            <i class="fas fa-code"></i>
+                            <h4 data-tr="Kodlama Tutkusu" data-en="Coding Passion" data-de="Programmierleidenschaft" data-fr="Passion pour le Code" data-it="Passione per la Programmazione">Kodlama Tutkusu</h4>
+                            <p data-tr="Her satır kod, bir hikaye anlatır" data-en="Every line of code tells a story" data-de="Jede Codezeile erzählt eine Geschichte" data-fr="Chaque ligne de code raconte une histoire" data-it="Ogni riga di codice racconta una storia">Her satır kod, bir hikaye anlatır</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-tr="Yeteneklerim" data-en="My Skills" data-de="Meine Fähigkeiten" data-fr="Mes Compétences" data-it="Le Mie Competenze">Yeteneklerim</h2>
+                <p class="section-subtitle" data-tr="Teknoloji yelpazem" data-en="My Technology Stack" data-de="Mein Technologie-Stack" data-fr="Mon Stack Technologique" data-it="Il Mio Stack Tecnologico">Teknoloji yelpazem</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 data-tr="Frontend" data-en="Frontend" data-de="Frontend" data-fr="Frontend" data-it="Frontend">Frontend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 data-tr="Backend" data-en="Backend" data-de="Backend" data-fr="Backend" data-it="Backend">Backend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Flask</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-microsoft"></i>
+                            <span>ASP.NET Core</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="65%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 data-tr="Programlama Dilleri" data-en="Programming Languages" data-de="Programmiersprachen" data-fr="Langages de Programmation" data-it="Linguaggi di Programmazione">Programlama Dilleri</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-microsoft"></i>
+                            <span>C#</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>C++</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-tr="Deneyimim" data-en="My Experience" data-de="Meine Erfahrung" data-fr="Mon Expérience" data-it="La Mia Esperienza">Deneyimim</h2>
+                <p class="section-subtitle" data-tr="Eğitim ve kariyer yolculuğum" data-en="My Education and Career Journey" data-de="Meine Bildungs- und Karriere-Reise" data-fr="Mon Parcours Éducatif et Professionnel" data-it="Il Mio Percorso Educativo e Professionale">Eğitim ve kariyer yolculuğum</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date" data-tr="2025 - Devam Ediyor" data-en="2025 - Ongoing" data-de="2025 - Laufend" data-fr="2025 - En Cours" data-it="2025 - In Corso">2025 - Devam Ediyor</div>
+                        <h3 data-tr="Google Developer Group Core Takımı" data-en="Google Developer Group Core Team" data-de="Google Developer Group Core Team" data-fr="Équipe Google Developer Group Core" data-it="Team Google Developer Group Core">Google Developer Group Core Takımı</h3>
+                        <p data-tr="Üniversite eğitimim üçüncü sınıfımda Google Developer Group Core takımına katıldım." data-en="I joined the Google Developer Group Core team in my third year of university education." data-de="Ich bin im dritten Jahr meiner Universitätsausbildung dem Google Developer Group Core Team beigetreten." data-fr="J'ai rejoint l'équipe Google Developer Group Core en troisième année de mon éducation universitaire." data-it="Mi sono unito al team Google Developer Group Core nel terzo anno della mia educazione universitaria.">
+                            Üniversite eğitimim üçüncü sınıfımda Google Developer Group Core takımına katıldım.
+                        </p>
+                        <ul>
+                            <li data-tr="Bu sene ve bir sonraki sene Google Developer Group Core takımında çalışarak kendimi geliştirmeye çalışıyorum." data-en="This year and next year I am trying to develop myself by working in the Google Developer Group Core team." data-de="Dieses Jahr und nächstes Jahr versuche ich mich weiterzuentwickeln, indem ich im Google Developer Group Core Team arbeite." data-fr="Cette année et l'année prochaine, j'essaie de me développer en travaillant dans l'équipe Google Developer Group Core." data-it="Quest'anno e il prossimo anno sto cercando di svilupparmi lavorando nel team Google Developer Group Core.">Bu sene ve bir sonraki sene Google Developer Group Core takımında çalışarak kendimi geliştirmeye çalışıyorum.</li>
+                            <li data-tr="Ayrıca bu sene Google Developer Group Core takımı ile birlikte yeni projelere imza atacağız." data-en="Also this year we will sign new projects together with the Google Developer Group Core team." data-de="Außerdem werden wir dieses Jahr zusammen mit dem Google Developer Group Core Team neue Projekte unterzeichnen." data-fr="Aussi cette année, nous signerons de nouveaux projets ensemble avec l'équipe Google Developer Group Core." data-it="Inoltre quest'anno firmeremo nuovi progetti insieme al team Google Developer Group Core.">Ayrıca bu sene Google Developer Group Core takımı ile birlikte yeni projelere imza atacağız.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date" data-tr="2023 - Devam Ediyor" data-en="2023 - Ongoing" data-de="2023 - Laufend" data-fr="2023 - En Cours" data-it="2023 - In Corso">2023 - Devam Ediyor</div>
+                        <h3 data-tr="Üniversite Eğitimi" data-en="University Education" data-de="Universitätsausbildung" data-fr="Éducation Universitaire" data-it="Educazione Universitaria">Üniversite Eğitimi</h3>
+                        <h4 data-tr="Istinye Üniversitesi - Bilgisayar Mühendisliği" data-en="Istinye University - Computer Engineering" data-de="Istinye University - Informatikingenieurwesen" data-fr="Université d'Istinye - Ingénierie Informatique" data-it="Università di Istinye - Ingegneria Informatica">Istinye Üniversitesi - Bilgisayar Mühendisliği</h4>
+                        <p data-tr="Üniversite eğitimimi Istinye Üniversitesi Bilgisayar Mühendisliği bölümünde okuyorum." data-en="I am studying my university education in the Computer Engineering department at Istinye University." data-de="Ich studiere meine Universitätsausbildung in der Informatikabteilung der Istinye University." data-fr="J'étudie mon éducation universitaire dans le département d'Ingénierie Informatique de l'Université d'Istinye." data-it="Sto studiando la mia educazione universitaria nel dipartimento di Ingegneria Informatica dell'Università di Istinye.">
+                            Üniversite eğitimimi Istinye Üniversitesi Bilgisayar Mühendisliği bölümünde okuyorum.
+                        </p>
+                        <ul>
+                            <li data-tr="İlk yıl C++ ve Nesne Yönelimli Programlama dilleri derslerini aldım ve bunlar ile proje geliştirmeye başladım." data-en="In my first year, I took C++ and Object-Oriented Programming language courses and started developing projects with them." data-de="In meinem ersten Jahr nahm ich C++ und objektorientierte Programmiersprachenkurse und begann mit ihnen Projekte zu entwickeln." data-fr="En première année, j'ai suivi des cours de langages de programmation C++ et orientés objet et j'ai commencé à développer des projets avec eux." data-it="Nel primo anno ho seguito corsi di linguaggi di programmazione C++ e orientati agli oggetti e ho iniziato a sviluppare progetti con loro.">İlk yıl C++ ve Nesne Yönelimli Programlama dilleri derslerini aldım ve bunlar ile proje geliştirmeye başladım.</li>
+                            <li data-tr="İkinci yılımda Python, Data Structure ve Algoritma Analizi derslerini aldım ve bunlar ile proje geliştirmeye başladım." data-en="In my second year, I took Python, Data Structure and Algorithm Analysis courses and started developing projects with them." data-de="In meinem zweiten Jahr nahm ich Python-, Datenstruktur- und Algorithmusanalysekurse und begann mit ihnen Projekte zu entwickeln." data-fr="En deuxième année, j'ai suivi des cours de Python, Structure de Données et Analyse d'Algorithmes et j'ai commencé à développer des projets avec eux." data-it="Nel secondo anno ho seguito corsi di Python, Strutture Dati e Analisi di Algoritmi e ho iniziato a sviluppare progetti con loro.">İkinci yılımda Python, Data Structure ve Algoritma Analizi derslerini aldım ve bunlar ile proje geliştirmeye başladım.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2018 - 2022</div>
+                        <h3 data-tr="Lise Eğitimi" data-en="High School Education" data-de="Gymnasialausbildung" data-fr="Éducation Lycée" data-it="Educazione Liceale">Lise Eğitimi</h3>
+                        <h4 data-tr="Küçükçekmece Anadolu Lisesi" data-en="Küçükçekmece Anatolian High School" data-de="Küçükçekmece Anatolisches Gymnasium" data-fr="Lycée Anatolien de Küçükçekmece" data-it="Liceo Anatolico di Küçükçekmece">Küçükçekmece Anadolu Lisesi</h4>
+                        <p data-tr="Lise eğitimimi Küçükçekmece Anadolu Lisesi'nde okudum." data-en="I studied my high school education at Küçükçekmece Anatolian High School." data-de="Ich studierte meine Gymnasialausbildung am Küçükçekmece Anatolischen Gymnasium." data-fr="J'ai étudié mon éducation lycée au Lycée Anatolien de Küçükçekmece." data-it="Ho studiato la mia educazione liceale al Liceo Anatolico di Küçükçekmece.">
+                            Lise eğitimimi Küçükçekmece Anadolu Lisesi'nde okudum.
+                        </p>
+                        <ul>
+                            <li data-tr="Lise eğitimim boyunca matematik ve programlama dilleri alanında kendimi geliştirdim." data-en="Throughout my high school education, I developed myself in mathematics and programming languages." data-de="Während meiner Gymnasialausbildung entwickelte ich mich in Mathematik und Programmiersprachen." data-fr="Tout au long de mon éducation lycée, je me suis développé en mathématiques et langages de programmation." data-it="Durante la mia educazione liceale, mi sono sviluppato in matematica e linguaggi di programmazione.">Lise eğitimim boyunca matematik ve programlama dilleri alanında kendimi geliştirdim.</li>
+                            <li data-tr="İlk öğrendiğim C# programlama dilinin ilk temellerini atarak proje geliştirmeye başladım." data-en="I started developing projects by laying the first foundations of C# programming language, which I first learned." data-de="Ich begann Projekte zu entwickeln, indem ich die ersten Grundlagen der C#-Programmiersprache legte, die ich zuerst lernte." data-fr="J'ai commencé à développer des projets en posant les premières bases du langage de programmation C#, que j'ai appris en premier." data-it="Ho iniziato a sviluppare progetti ponendo le prime basi del linguaggio di programmazione C#, che ho imparato per primo.">İlk öğrendiğim C# programlama dilinin ilk temellerini atarak proje geliştirmeye başladım.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-tr="Projelerim" data-en="My Projects" data-de="Meine Projekte" data-fr="Mes Projets" data-it="I Miei Progetti">Projelerim</h2>
+                <p class="section-subtitle" data-tr="Yaratıcılığımın eserleri" data-en="Works of My Creativity" data-de="Werke meiner Kreativität" data-fr="Œuvres de Ma Créativité" data-it="Opere della Mia Creatività">Yaratıcılığımın eserleri</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-buttons">
+                                <button class="project-btn demo-btn" onclick="window.open('https://quest-way.onrender.com', '_blank')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </button>
+                                <button class="project-btn github-btn" onclick="window.open('https://github.com/ardamoustafa1/Quest-Way-', '_blank')">
+                                    <i class="fab fa-github"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>QuestWay</h3>
+                        <p data-tr="QuestWay modern ve kullanıcı dostu bir seyahat web uygulaması." data-en="QuestWay is a modern and user-friendly travel web application." data-de="QuestWay ist eine moderne und benutzerfreundliche Reise-Webanwendung." data-fr="QuestWay est une application web de voyage moderne et conviviale." data-it="QuestWay è un'applicazione web di viaggio moderna e user-friendly.">QuestWay modern ve kullanıcı dostu bir seyahat web uygulaması.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Full Stack</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-buttons">
+                                <button class="project-btn demo-btn" onclick="window.open('https://pomodev.onrender.com', '_blank')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </button>
+                                <button class="project-btn github-btn" onclick="window.open('https://github.com/ardamoustafa1/Pomodev', '_blank')">
+                                    <i class="fab fa-github"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Pomodev</h3>
+                        <p data-tr="Pomodev, pomodoro tekniği ile çalışma yöntemi için geliştirilmiş bir web uygulaması." data-en="Pomodev is a web application developed for working method with pomodoro technique." data-de="Pomodev ist eine Webanwendung, die für Arbeitsmethoden mit Pomodoro-Technik entwickelt wurde." data-fr="Pomodev est une application web développée pour la méthode de travail avec la technique pomodoro." data-it="Pomodev è un'applicazione web sviluppata per il metodo di lavoro con la tecnica pomodoro.">Pomodev, pomodoro tekniği ile çalışma yöntemi için geliştirilmiş bir web uygulaması.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">Full Stack</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-tr="İletişim" data-en="Contact" data-de="Kontakt" data-fr="Contact" data-it="Contatto">İletişim</h2>
+                <p class="section-subtitle" data-tr="Birlikte çalışalım" data-en="Let's Work Together" data-de="Lassen Sie uns zusammenarbeiten" data-fr="Travaillons Ensemble" data-it="Lavoriamo Insieme">Birlikte çalışalım</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>E-posta</h4>
+                            <p>ardamoustafa_@hotmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Telefon</h4>
+                            <p>+90 507 027 1251</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 data-tr="Konum" data-en="Location" data-de="Standort" data-fr="Localisation" data-it="Posizione">Konum</h4>
+                            <p data-tr="İstanbul, Türkiye" data-en="Istanbul, Turkey" data-de="Istanbul, Türkei" data-fr="Istanbul, Turquie" data-it="Istanbul, Turchia">İstanbul, Türkiye</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/arda-moustafa-746335335" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form action="https://formspree.io/f/xqadrlqg" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Adınız" data-tr-placeholder="Adınız" data-en-placeholder="Your Name" data-de-placeholder="Ihr Name" data-fr-placeholder="Votre Nom" data-it-placeholder="Il Vostro Nome" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="E-posta" data-tr-placeholder="E-posta" data-en-placeholder="Email" data-de-placeholder="E-Mail" data-fr-placeholder="E-mail" data-it-placeholder="E-mail" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Konu" data-tr-placeholder="Konu" data-en-placeholder="Subject" data-de-placeholder="Betreff" data-fr-placeholder="Sujet" data-it-placeholder="Oggetto" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Mesajınız" data-tr-placeholder="Mesajınız" data-en-placeholder="Your Message" data-de-placeholder="Ihre Nachricht" data-fr-placeholder="Votre Message" data-it-placeholder="Il Vostro Messaggio" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" data-tr="Mesaj Gönder" data-en="Send Message" data-de="Nachricht Senden" data-fr="Envoyer le Message" data-it="Invia Messaggio">Mesaj Gönder</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Arda Moustafa. Tüm hakları saklıdır.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Ana Sayfa</a>
+                    <a href="#about">Hakkımda</a>
+                    <a href="#contact">İletişim</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
